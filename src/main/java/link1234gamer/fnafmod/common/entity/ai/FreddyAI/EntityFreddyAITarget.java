@@ -157,7 +157,7 @@ public abstract class EntityFreddyAITarget extends EntityAIBase
                     }
                 }
 
-                return true;
+                return false;
             }
         }
     }
