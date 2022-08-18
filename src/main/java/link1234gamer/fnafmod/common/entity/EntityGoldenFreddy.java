@@ -56,7 +56,7 @@ import scala.tools.nsc.transform.patmat.ScalaLogic.TreesAndTypesDomain.Var;
 	}
 	protected boolean canDespawn()
 	{
-		return false;
+		return true;
 	}
 		
 	public Vec3 getLookVec()
@@ -176,7 +176,7 @@ import scala.tools.nsc.transform.patmat.ScalaLogic.TreesAndTypesDomain.Var;
 	    
 	    {
      if (this.shouldJumpscarePlayer(attackingPlayer)&& this.isAggressive){
-	 mc.thePlayer.setHealth(0);
+	 mc.thePlayer.setHealth(5);
 	 }
  }
 	protected void dropFewItems(boolean par1, int par2)
