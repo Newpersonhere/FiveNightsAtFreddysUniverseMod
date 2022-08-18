@@ -29,7 +29,7 @@ public class EntityFreddyAIWander extends EntityAIBase
     {
     	if (((EntityFreddy)entity).isAgressive())
     	{
-    		if (this.entity.getAge() >= 100)
+    		if (this.entity.getAge() >= 1)
     		{
     			return false;
     		}
