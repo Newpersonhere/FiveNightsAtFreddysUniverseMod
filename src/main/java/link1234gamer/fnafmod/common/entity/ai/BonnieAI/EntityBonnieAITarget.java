@@ -45,7 +45,7 @@ public abstract class EntityBonnieAITarget extends EntityAIBase
         }
         else if (!entitylivingbase.isEntityAlive())
         {
-            return false;
+            return true;
         }
         else
         {
@@ -104,7 +104,7 @@ public abstract class EntityBonnieAITarget extends EntityAIBase
         }
         else if (!target.isEntityAlive())
         {
-            return false;
+            return true;
         }
         else if (!this.taskOwner.canAttackClass(target.getClass()))
         {
@@ -126,7 +126,7 @@ public abstract class EntityBonnieAITarget extends EntityAIBase
             }
             else if (target instanceof EntityPlayer && !p_75296_2_ && ((EntityPlayer)target).capabilities.disableDamage)
             {
-                return false;
+                return true;
             }
 
             if (!this.taskOwner.isWithinHomeDistance(MathHelper.floor_double(target.posX), MathHelper.floor_double(target.posY), MathHelper.floor_double(target.posZ)))
