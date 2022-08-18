@@ -89,7 +89,7 @@ public class EntityShadowBonnie extends EntityMob
         {
             if (this.shouldAttackPlayer(entityplayer))
             {
-                this.isAggressive = true;
+                this.isAggressive = false;
 
                 if (this.stareTimer == 0)
                 {
@@ -99,7 +99,7 @@ public class EntityShadowBonnie extends EntityMob
                 if (this.stareTimer++ == 5)
                 {
                     this.stareTimer = 0;
-                    this.setScreaming(true);
+                    this.setScreaming(false);
                     return entityplayer;
                 }
             }
@@ -409,7 +409,7 @@ public class EntityShadowBonnie extends EntityMob
         }
         else
         {
-            this.setScreaming(true);
+            this.setScreaming(false);
 
             if (p_70097_1_ instanceof EntityDamageSource && p_70097_1_.getEntity() instanceof EntityPlayer)
             {
