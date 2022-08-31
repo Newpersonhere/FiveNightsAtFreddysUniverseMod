@@ -33,8 +33,8 @@ public class EntityToyFreddy extends EntityMob{
         this.tasks.addTask(8, new EntityTFreddyAIWatchClosest(this, EntityPlayer.class, 8.0F));
 //      this.tasks.addTask(9, new EntitySpringbonnieAIStare(this, EntityPlayer.class, 3.0F));
         this.tasks.addTask(10, new EntityTFreddyAILookIdle(this));
-        this.targetTasks.addTask(1, new EntityTFreddyAINearestAttackableTarget(this, EntityPlayer.class, 0, true));
-        this.targetTasks.addTask(2, new EntityTFreddyAINearestAttackableTarget(this, EntityPlayer.class, 0, true));
+        this.targetTasks.addTask(1, new EntityTFreddyAINearestAttackableTarget(this, EntityPlayer.class, 0, false));
+        this.targetTasks.addTask(2, new EntityTFreddyAINearestAttackableTarget(this, EntityPlayer.class, 0, false));
 		
 	}
 	
@@ -50,7 +50,7 @@ public class EntityToyFreddy extends EntityMob{
 	
 	protected String getLivingSound()
 	{
-		return isAgressive() ? livingSound() : null;
+		return isAgressive(0) ? livingSound() : null;
 	}
 	
 	protected String livingSound()
