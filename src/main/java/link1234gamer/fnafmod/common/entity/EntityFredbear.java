@@ -32,8 +32,8 @@ public class EntityFredbear extends EntityMob {
         this.tasks.addTask(8, new EntityFredbearAIWatchClosest(this, EntityPlayer.class, 8.0F));
 //      this.tasks.addTask(9, new EntityFredbearAIStare(this, EntityPlayer.class, 3.0F));
         this.tasks.addTask(10, new EntityFredbearAILookIdle(this));
-        this.targetTasks.addTask(1, new EntityFredbearAINearestAttackableTarget(this, EntityPlayer.class, 0, true));
-        this.targetTasks.addTask(2, new EntityFredbearAINearestAttackableTarget(this, EntityPlayer.class, 0, true));
+        this.targetTasks.addTask(1, new EntityFredbearAINearestAttackableTarget(this, EntityPlayer.class, 0, false));
+        this.targetTasks.addTask(2, new EntityFredbearAINearestAttackableTarget(this, EntityPlayer.class, 0, false));
         
 	}
 	
